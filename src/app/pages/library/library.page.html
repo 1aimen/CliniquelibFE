@@ -1,0 +1,151 @@
+<!-- Page -->
+<main class="library-page">
+  <!-- component holder -->
+<div class="container">
+
+<!-- a single component here -->
+<div class="content">
+<cds-menu-button
+  [kind]="'primary'"
+  [size]="'sm'"
+  [menuAlignment]="'bottom'"
+  [label]="'Options'"
+>
+  <cds-menu-item
+    label="First action with a long label description"
+  ></cds-menu-item>
+  <cds-menu-item
+    label="Second action"
+
+  ></cds-menu-item>
+  <cds-menu-item label="Third action" [disabled]="true"></cds-menu-item>
+  <cds-menu-divider></cds-menu-divider>
+  <cds-menu-item label="Cut" info="⌘X"></cds-menu-item>
+  <cds-menu-item label="Option with icon" icon="calendar"></cds-menu-item>
+  <cds-menu-divider></cds-menu-divider>
+  <cds-menu-item label="Danger action" [danger]="true"></cds-menu-item>
+</cds-menu-button>
+</div>
+
+<!-- primary button -->
+<div class="content">
+<button cdsButton
+size="sm"
+>
+Primary
+</button>
+</div>
+
+<!-- a button with icon -->
+
+<div class="content">
+<button cdsButton
+size="sm"
+>
+A button
+<svg class="cds--btn__icon" cdsIcon="add" size="16"></svg>
+</button>
+</div>
+
+<!-- icon only button -->
+
+<div class="content">
+<button cdsButton
+size="sm"
+[iconOnly]="true"
+>
+<svg class="cds--btn__icon" cdsIcon="add" size="16"></svg>
+</button>
+</div>
+
+
+<!-- outline only button -->
+
+<div class="content">
+<button cdsButton
+[cdsButton]="'tertiary'"
+size="sm"
+>
+Outline
+</button>
+</div>
+
+<!-- secondary button -->
+
+<div class="content">
+<button cdsButton
+[cdsButton]="'secondary'"
+size="sm"
+>
+Secondary
+</button>
+</div>
+
+
+
+<!-- danger button -->
+
+<div class="content">
+<button cdsButton
+[cdsButton]="'danger'"
+size="sm"
+>
+Danger
+</button>
+</div>
+
+<!-- danger button -->
+
+<div class="content">
+<button cdsButton
+[cdsButton]="'ghost'"
+size="sm"
+>
+Ghost
+</button>
+</div>
+
+
+<!-- a single component here -->
+<div class="content">
+<cds-text-label
+
+>
+  Email
+  <input
+    cdsText
+    [size]="'sm'"
+    [placeholder]="'aimen@gmail.com'"
+    [autocomplete]="true"
+  />
+</cds-text-label>
+</div>
+<!-- a single component here -->
+<div class="content">
+<cds-text-label
+
+>
+  Password
+  <input
+    cdsPassword
+    [size]="'sm'"
+    [placeholder]="'*******'"
+    [autocomplete]="true"
+  />
+</cds-text-label>
+</div>
+<!-- a single component here -->
+<div class="content">
+<cds-loading
+  [isActive]="true"
+  [size]="'sm'"
+></cds-loading>
+</div>
+<!-- a single component here -->
+<div class="content">
+
+</div>
+
+
+</div>
+ </main>
