@@ -1,0 +1,103 @@
+.support-container{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(4, 122, 158);
+}
+.right-side{
+    width: 40%;
+    background-color: white;
+    margin-left: 60%;
+}
+.text1{
+    color: rgb(4, 122, 158);
+    font-size: 24px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+span{
+    color: black;
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+.extra{
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 150px;
+    margin-bottom: 5px;
+}
+.extra:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.text2{
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.text3{
+    font-size: 14px;
+    color: rgb(84, 84, 84);
+    margin-left: 70px;
+    margin-bottom: 10px;
+}
+input{
+    margin-left: 70px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: none;
+    background-color: rgb(244, 242, 242);
+    padding-left: 15px;
+    border-bottom: 0.5px solid rgb(79, 78, 78);
+}
+input:focus,
+textarea:focus {
+  outline: none;  
+  outline: 2px solid #0f62fe;            
+  background-color: rgb(244, 242, 242);    
+}
+.issue{
+    width: 60%;
+    height: 150px;
+     margin-left: 70px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: none;
+    background-color: rgb(244, 242, 242);
+    padding-left: 15px;
+    border-bottom: 0.5px solid rgb(79, 78, 78);
+}
+.text4{
+    margin-top: 25px;
+    margin-left: 40px;
+    margin-bottom: 0;
+}
+button{
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    background-color: var(--cds-button-primary, #0f62fe);
+    color: var(--cds-text-on-color, #ffffff);
+    padding: 6px 0px;
+    margin-left: 10px;
+    padding-left: 15px;
+    padding-right: 25px;
+    margin-top: 15px;
+    margin-bottom: 17px;
+    transition: background-color 0.05s;
+}
+.submit-button{
+    display: block;
+    margin-left: 70px;
+}
+button:hover{
+    background-color: #1149b1;
+    cursor: pointer;
+}
+button:active{
+    outline: 2px solid #0f62fe;
+     outline: none; 
+}
