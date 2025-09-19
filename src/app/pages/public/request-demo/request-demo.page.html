@@ -1,0 +1,54 @@
+<div class="login-layout">
+  <div class="translation-wrapper">
+    <translation-component></translation-component>
+  </div>
+
+  <div class="welcome-panel">
+    <div class="marketing-card"></div>
+  </div>
+
+  <div class="login-panel">
+    <div class="login-card">
+      <h1 class="app-expressive-heading-06">Request a Demo</h1>
+
+      <form>
+        <!-- Full Name -->
+        <cds-text-label [helperText]="''" [invalidText]="'This field is required'">
+          Full Name
+          <input cdsText size="sm" [placeholder]="'John Doe'" [autocomplete]="true" />
+        </cds-text-label>
+
+        <!-- Email Address -->
+        <cds-text-label [helperText]="''" [invalidText]="'This field is required'">
+          Email Address
+          <input
+            cdsText
+            size="sm"
+            type="email"
+            [placeholder]="'john.doe@example.com'"
+            [autocomplete]="true"
+          />
+        </cds-text-label>
+
+        <!-- Company Name -->
+        <cds-text-label [helperText]="''" [invalidText]="'This field is required'">
+          Company
+          <input cdsText size="sm" [placeholder]="'Acme Inc.'" [autocomplete]="true" />
+        </cds-text-label>
+
+        <!-- Message / Request Details -->
+
+        <textarea cdsTextArea [placeholder]="'Tell us about your needs...'" rows="4"></textarea>
+
+        <!-- Navigation -->
+        <div>
+          Already have an account?
+          <a cdsLink routerLink="../login">Sign in</a>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" [size]="'sm'" cdsButton="primary">Request Demo</button>
+      </form>
+    </div>
+  </div>
+</div>

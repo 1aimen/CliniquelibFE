@@ -1,0 +1,48 @@
+<div>
+  <cds-header name="[Platform]">
+    <cds-hamburger *ngIf="true"></cds-hamburger>
+    <cds-header-navigation>
+      <cds-header-item>Catalog</cds-header-item>
+      <cds-header-item>Docs</cds-header-item>
+      <cds-header-item>Support</cds-header-item>
+      <cds-header-menu title="Manage">
+        <cds-header-item>Link 1</cds-header-item>
+        <cds-header-item>Link 2</cds-header-item>
+        <cds-header-item>Link 3</cds-header-item>
+      </cds-header-menu>
+    </cds-header-navigation>
+    <cds-header-global>
+      <cds-header-action #firstAction description="action">
+        <svg cdsIcon="fade" size="20"></svg>
+      </cds-header-action>
+      <cds-header-action description="action">
+        <svg cdsIcon="fade" size="20"></svg>
+      </cds-header-action>
+    </cds-header-global>
+  </cds-header>
+  <cds-sidenav style="margin-top: 3rem">
+    <cds-sidenav-item>
+      <svg cdsIcon="fade" size="16"></svg>
+      Link
+    </cds-sidenav-item>
+    <cds-sidenav-item>
+      <svg cdsIcon="fade" size="16"></svg>
+      Link
+    </cds-sidenav-item>
+    <cds-sidenav-menu title="Category title">
+      <svg cdsIcon="fade" size="16"></svg>
+      <cds-sidenav-item>Link</cds-sidenav-item>
+      <cds-sidenav-item>Link</cds-sidenav-item>
+      <cds-sidenav-item>Link</cds-sidenav-item>
+    </cds-sidenav-menu>
+  </cds-sidenav>
+  <cds-panel [expanded]="firstAction.active"></cds-panel>
+  <cds-panel>
+    <cds-switcher-list>
+      <cds-switcher-list-item> Switcher item one </cds-switcher-list-item>
+      <cds-switcher-list-item>Switcher item two</cds-switcher-list-item>
+      <cds-switcher-list-item>Switcher item three</cds-switcher-list-item>
+      <cds-switcher-list-item>Switcher item four</cds-switcher-list-item>
+    </cds-switcher-list>
+  </cds-panel>
+</div>

@@ -1,0 +1,99 @@
+<div class="app-mini-sidebar">
+  <!-- Top items -->
+  <div class="app-mini-sidebar__list">
+    <!-- Global Search -->
+    <div
+      class="app-mini-sidebar__list__item app-mini-sidebar__list__item__highlight"
+      cdsTooltip="Open"
+      placement="right"
+    >
+      <div class="app-mini-sidebar__list__item__pill">
+        <svg cdsIcon="chevron--right" size="16"></svg>
+      </div>
+    </div>
+
+    <!-- Notifications -->
+    <div class="app-mini-sidebar__list__item">
+      <cds-overflow-menu
+        class="app-mini-sidebar__list__item__pill"
+        placement="bottom"
+        cdsTooltip="Notifications"
+      >
+        <cds-overflow-menu false>
+          <div class="app-list-header-alt">
+            <div class="flex justify-between items-center">
+              <span>Notifications</span>
+              <span class="app-helper-text-01 app-color-danger">+ 12</span>
+            </div>
+          </div>
+        </cds-overflow-menu>
+
+        <cds-overflow-menu-option>
+          <div class="app-list-footer-alt text-center app-helper-text-01 mb-2">
+            <a>See all</a>
+          </div>
+        </cds-overflow-menu-option>
+      </cds-overflow-menu>
+    </div>
+
+    <!-- Messages -->
+    <div>
+      <cds-overflow-menu placement="bottom" cdsTooltip="Messages">
+        <cds-overflow-menu-option false>
+          <div class="app-list-header-alt">
+            <div class="flex justify-between items-center">
+              <span>Messages</span>
+              <span class="app-helper-text-01 app-color-success">+ 5</span>
+            </div>
+          </div>
+        </cds-overflow-menu-option>
+
+        <cds-overflow-menu-option>
+          <div class="app-list-footer-alt text-center app-helper-text-01 mb-2">
+            <a>See all</a>
+          </div>
+        </cds-overflow-menu-option>
+      </cds-overflow-menu>
+    </div>
+
+    <!-- Applications -->
+    <div>
+      <cds-overflow-menu placement="bottom" cdsTooltip="Applications">
+        <cds-overflow-menu-option>
+          <a routerLink="/app/scrum-board">Mes dossiers</a>
+        </cds-overflow-menu-option>
+        <cds-overflow-menu-option>
+          <a routerLink="/app/tasks">Mes rendez-vous</a>
+        </cds-overflow-menu-option>
+        <cds-overflow-menu-option>
+          <a routerLink="/app/file-manager">Messages</a>
+        </cds-overflow-menu-option>
+      </cds-overflow-menu>
+    </div>
+  </div>
+
+  <!-- Bottom items -->
+  <div class="app-mini-sidebar__bottom">
+    <!-- Help -->
+    <div class="app-mini-sidebar__list__item">
+      <div cdsTooltip="Help" cdsIcon="" placement="right">
+        <svg icon="help" size="16"></svg>
+      </div>
+    </div>
+
+    <!-- Profile -->
+    <div>
+      <cds-overflow-menu placement="top" cdsTooltip="Account">
+        <cds-overflow-menu-option>
+          <a routerLink="/app/profile">Profile</a>
+        </cds-overflow-menu-option>
+        <cds-overflow-menu-option>
+          <a routerLink="/app/user/settings">Settings</a>
+        </cds-overflow-menu-option>
+        <cds-overflow-menu-option>
+          <a routerLink="/auth/modern/signin">Logout</a>
+        </cds-overflow-menu-option>
+      </cds-overflow-menu>
+    </div>
+  </div>
+</div>

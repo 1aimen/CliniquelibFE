@@ -1,0 +1,48 @@
+<div class="login-layout">
+  <div class="translation-wrapper">
+    <translation-component />
+  </div>
+
+  <div class="welcome-panel">
+    <div class="marketing-card"></div>
+  </div>
+
+  <div class="login-panel">
+    <div class="login-card">
+      <h1 class="app-expressive-heading-06">Sign in</h1>
+
+      <form>
+        <div class="">
+          <cds-text-label [helperText]="''" [invalidText]="'This field is required'">
+            Email address
+            <input
+              cdsText
+              size="sm"
+              [disabled]="false"
+              [placeholder]="'aimen@gmail.com'"
+              [autocomplete]="true"
+            />
+          </cds-text-label>
+        </div>
+
+        <div class="">
+          <cds-text-label [helperText]="''" [invalidText]="'This field is required'">
+            Password
+            <input
+              cdsPassword
+              size="sm"
+              [disabled]="false"
+              [placeholder]="'******'"
+              [autocomplete]="true"
+            />
+          </cds-text-label>
+        </div>
+        <div>
+          Dont have an account ?
+          <a cdsLink routerLink="../request-demo">Request one</a>
+        </div>
+        <button type="submit" [size]="'sm'" cdsButton="primary">Sign in</button>
+      </form>
+    </div>
+  </div>
+</div>

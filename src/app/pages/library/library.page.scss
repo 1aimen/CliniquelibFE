@@ -1,0 +1,21 @@
+.library-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffffff, #ecf3f3); // page-wide gradient
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 16px;
+  margin: 10px;
+  width: 100%;
+  height: auto;
+}
+
+
+.content {
+display : flex;
+}

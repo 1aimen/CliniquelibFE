@@ -1,0 +1,27 @@
+/* Translation dropdown flags */
+.flag-icon {
+  width: 22px;
+  height: 16px;
+  margin-right: 8px;
+  vertical-align: middle;
+  object-fit: cover;
+  border-radius: 2px; // slightly rounded flags
+}
+
+/* Optional: make menu items a bit taller and aligned */
+cds-menu-item {
+  display: flex;
+  align-items: center;
+  gap: 12px; // space between flag and text
+  font-size: 0.875rem; // small text for sm button
+  padding: 4px 12px;
+}
+
+/* Optional: adjust button label with icon (flag) if you want a compact selector) */
+cds-menu-button {
+  .cds--btn__label {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+}
