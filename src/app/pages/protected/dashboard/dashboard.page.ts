@@ -1,14 +1,15 @@
-import { Component } from '@angular/core';
-import { LayoutMiniSidebarComponent } from '../../../components/layout/mini-sidebar/mini-sidebar.component';
-import { HeaderComponent } from '../../../components/layout/header/header.component';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'dashboard-page',
-  standalone: true,
-  imports: [LayoutMiniSidebarComponent, HeaderComponent],
-  templateUrl: './dashboard.page.html',
-  styleUrls: ['./dashboard.page.scss'],
+  selector: 'app-starter-left-sidebar-tabs',
+  templateUrl: './starter-left-sidebar-tabs.component.html',
+  styleUrls: ['./starter-left-sidebar-tabs.component.scss']
 })
-export class DashboardPage {
-  // ...
+export class StarterLeftSidebarTabsComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
 }
